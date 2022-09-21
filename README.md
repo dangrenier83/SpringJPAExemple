@@ -2,20 +2,20 @@
 
 ## Préparation de VS Code pour la programmation Spring
 
-* Nous devons installer les extensions suivantes (en plus de celles pour Java) pour Visual Studio Code: 
-	** Spring Boot Extension Pack (Spring Boot Tools, Spring Initialzr Java Support, Spring Boot Dashboard)
-	** Spring Boot Support
-	** Thymeleaf Snippets
-	** Lombok Annotations Support for VS Code
+Nous devons installer les extensions suivantes (en plus de celles pour Java) pour Visual Studio Code: 
+* Spring Boot Extension Pack (Spring Boot Tools, Spring Initialzr Java Support, Spring Boot Dashboard)
+* Spring Boot Support
+* Thymeleaf Snippets
+* Lombok Annotations Support for VS Code
 
 ![1](https://user-images.githubusercontent.com/87398047/191582943-60718cca-81f0-44b6-a9a7-9ff37e17249a.png)
 
 ## Création du projet avec Spring Boot Initialzr
 
 * Fermer votre workspace de Visual Studio Code et cliquer sur Create Java project
-   <screenshot 2>
+![2](https://user-images.githubusercontent.com/87398047/191583640-9268be03-f9ea-496e-aa04-0b93ca8a4e16.png)
 
-* Vous aurez ensuite les choix suivants: <screenshot 3> 
+* Vous aurez ensuite les choix suivants: ![3](https://user-images.githubusercontent.com/87398047/191583776-10dc1f9b-dbb1-4ddf-ae82-b9743bb91250.png)
 
   Sélectionnez Spring Boot > Maven Project > 2.7.3 > Java
 
@@ -27,8 +27,8 @@
   Nous allons choisir la version 11 de Java
 
   Ensuite nous arrivons aux choix des "starter dependencies" de notre projet Spring Boot
+![4](https://user-images.githubusercontent.com/87398047/191583912-4831c84e-33f8-41b0-a026-ba46da4d2081.png)
 
-  <screenshot 4>
 
   ## Choix des dependencies
 
@@ -41,13 +41,13 @@
   - JDBC API, Spring Data JPA, Spring Data JDBC
   - Oracle Driver puisque nous allons utiliser une base de données Oracle 11
 
-  <screenshot 5>
 
+![5](https://user-images.githubusercontent.com/87398047/191583990-7c622032-8a22-4c7a-9809-e6f7c40e8623.png)
   Ensuite il nous demande de sélectionner le chemin du dossier où nous sauvegarderons notre projet
 
   Nous pouvons ensuite l'ouvrir en cliquant sur Open
 
-  <screenshot 6>
+![6](https://user-images.githubusercontent.com/87398047/191584094-a9f5df95-3f1e-4510-ad3e-8339d7c6ae5b.png) 
 
 
  ## Configuration de notre projet Spring avec notre base de données
