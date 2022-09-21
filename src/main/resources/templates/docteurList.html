@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>List of doctors</title>
+    <link th:href="@{/styles/semantic-dist/semantic.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="ui container">
+        <div class="row"></div>
+        <table class="ui striped celled table">
+            <thead>
+                <tr>
+                    <th>Doctor ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>Username</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr th:each="doctor : ${dl}">
+                        <td data-label="Doctor ID" th:text="${doctor.id}"></td>
+                        <td data-label="First Name" th:text="${doctor.firstName}"></td>
+                        <td data-label="Last Name" th:text="${doctor.lastName}"></td>
+                        <td data-label="City" th:text="${doctor.city}"></td>
+                        <td data-label="Username" th:text="${doctor.username}"></td>
+                        <td>
+                            <a th:href="@{/docteurlist(user=${doctor.username}, act=modify)}">
+                                <button class="primary ui button">Modify</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a th:href="@{/docteurlist(user=${doctor.username}, act=delete)}">
+                                <button class="negative ui button">Delete</button>
+                            </a>
+                        </td>
+                    </tr>
+                <tr>
+                    <td colspan="6"></td>
+                    <td>
+                        <button class="ui button right" type="button" style='border-left:none;' onclick="location.href = '/'">Return</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>

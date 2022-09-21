@@ -146,3 +146,12 @@ public interface DocteurRepository extends CrudRepository<Docteur, Long> {
 
 
 
+
+## Ajout de données de base à l'aide d'un CommandLineRunner
+
+* Après l'avoir roulé une fois et avoir créé le modèle de données et populé votre database vous pouvez changer 
+ddl-auto dans le fichier application.yml de create vers update.
+
+
+
+

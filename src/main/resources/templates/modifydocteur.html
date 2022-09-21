@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Modifier docteur</title>
+        <link th:href="@{/styles/semantic-dist/semantic.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="ui grid">
+            <div class="row"></div>
+            <div class="row">
+                <form class="ui form three wide column centered" action="modifydocteur" method="post">
+                    <input type="hidden" name="doctorId" th:attr="value=${doctorToModify.id}">
+                    <div class="field">
+                        <label>First Name</label>
+                        <input type="text" name="firstName" th:attr="value=${doctorToModify.firstName}">
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" th:attr="value=${doctorToModify.lastName}">
+                    </div>
+                    <div class="field">
+                        <label>City</label>
+                        <input type="text" name="city" th:attr="value=${doctorToModify.city}">
+                    </div>
+                    <div class="field">
+                        <label>Username</label>
+                        <input type="text" name="username" th:attr="value=${doctorToModify.username}">
+                    </div>
+
+                    <button class="ui blue button right floated" type="submit">Modify</button>
+                    <button class="ui button left floated" onclick="location.href = '/'" type="button">Return</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

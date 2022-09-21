@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Add a Student</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{/styles/semantic-dist/semantic.css}" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div class="ui grid">
+            <div class="row"></div>
+            <div class="row">
+                <form class="ui form three wide column centered" action="ajoutdocteur" method="post">
+                    <div class="field">
+                        <label>First Name</label>
+                        <input type="text" name="firstName" placeholder="First Name">
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="field">
+                        <label>City</label>
+                        <input type="text" name="city" placeholder="City">
+                    </div>
+                    <div class="field">
+                        <label>Username</label>
+                        <input type="text" name="username" placeholder="Address">
+                    </div>
+
+                    <button class="ui blue button right floated" type="submit">Submit</button>
+                    <button class="ui button left floated" type="button" onclick="location.href = '/'">Return</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
