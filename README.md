@@ -8,7 +8,7 @@
 	** Thymeleaf Snippets
 	** Lombok Annotations Support for VS Code
 
-    <screenshot 1>
+![1](https://user-images.githubusercontent.com/87398047/191582943-60718cca-81f0-44b6-a9a7-9ff37e17249a.png)
 
 ## Création du projet avec Spring Boot Initialzr
 
