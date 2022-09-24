@@ -137,16 +137,20 @@ public interface DocteurRepository extends CrudRepository<Docteur, Long> {
 	l'implémentation des méthodes). 
 
 ## Création d'un controlleur de base
+Nous aurons besoin de 4 controllers soit :
 
-
-
+- MenuController.java : redirige `localhost:8080/` vers le template représentant le menu de base
+- DocteurListController.java : Permet l'affichage des docteurs à l'adresse `localhost:8080/docteurlist`. Prend également des paramètres optionnels
+dans l'URL soit act (modify ou delete) et user pour savoir sur quelle entité effectuer l'action.
+- AddDoctorController.java : Ajoute un docteur à l'aide des données du formulaire dans ajoutdocteur.html et redirige vers la liste
+- ModifyDoctorController.java : Modifie un docteur à l'aide des donnée du formulaire dans modifydocteur.html
 
 ## Création des vues à l'aide de templates Thymeleafs
-
-
-
-
-
+- Dans notre programme, les controlleurs renvoient des String du même nom qu'une vue Thymeleaf, les données y sont rendues disponibles
+par l'ajout d'objet nommés dans la modèle.
+- Les données issues d'un formulaire ou les paramètres optionnels correspondant aux actions modify et delete sont accédées grâce à l'annotation
+@RequestParam
+- Le templating engine Thymeleaf permet de nombreuses opérations (des boucles, accès aux données, conditionnels etc.) à celles présentes dans JSTL
 ## Ajout de données de base à l'aide d'un CommandLineRunner
 
 * Après l'avoir roulé une fois et avoir créé le modèle de données et populé votre database vous pouvez changer 
